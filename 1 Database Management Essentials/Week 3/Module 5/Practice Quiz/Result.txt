@@ -1,0 +1,45 @@
+mysql> source C:/Users/HP PC/Desktop/dUnivDBCreateStatements.sql;
++---------+------------+--------+------------------+-------+------------------+
+| EventNo | DateHeld   | CustNo | CustName         | FacNo | FacName          |
++---------+------------+--------+------------------+-------+------------------+
+| E100    | 2013-10-25 | C100   | Football         | F100  | Football stadium |
+| E101    | 2013-10-26 | C100   | Football         | F100  | Football stadium |
+| E102    | 2013-09-14 | C100   | Football         | F100  | Football stadium |
+| E103    | 2013-09-21 | C100   | Football         | F100  | Football stadium |
+| E104    | 2013-12-03 | C101   | Men's Basketball | F101  | Basketball arena |
+| E105    | 2013-12-05 | C101   | Men's Basketball | F101  | Basketball arena |
+| E106    | 2013-12-12 | C101   | Men's Basketball | F101  | Basketball arena |
++---------+------------+--------+------------------+-------+------------------+
+7 rows in set (0.03 sec)
+
++--------+------------------+---------+------------+-------+------------------+----------+
+| CustNo | CustName         | EventNo | DateHeld   | FacNo | FacName          | AudCost  |
++--------+------------------+---------+------------+-------+------------------+----------+
+| C100   | Football         | E100    | 2013-10-25 | F100  | Football stadium | 0.062500 |
+| C100   | Football         | E101    | 2013-10-26 | F100  | Football stadium | 0.062500 |
+| C100   | Football         | E102    | 2013-09-14 | F100  | Football stadium | 0.062500 |
+| C100   | Football         | E103    | 2013-09-21 | F100  | Football stadium | 0.062500 |
+| C101   | Men's Basketball | E104    | 2013-12-03 | F101  | Basketball arena | 0.166667 |
++--------+------------------+---------+------------+-------+------------------+----------+
+5 rows in set (0.01 sec)
+
++--------+------------------+------------+
+| CustNo | CustName         | TotEstCost |
++--------+------------------+------------+
+| C100   | Football         |   15000.00 |
+| C101   | Men's Basketball |    6000.00 |
++--------+------------------+------------+
+2 rows in set (0.01 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 1 row affected (0.09 sec)
+
+mysql> notee
